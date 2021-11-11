@@ -11,5 +11,10 @@
 ## Technologies Used
 
 ## How to Run the Notebooks
+### Running with Docker
+1. Clone Repo
+2. Open CMD and navigate to cloned repo
+3. Run `docker-compose up`
+4. Once deployed, copy the provided link and paste it as a URL
 
 ## References
