@@ -95,6 +95,7 @@ In order to install via Python you must follow these steps in order. If you alre
 Steps:
 1. [Install Python](#installing-python)
 2. [Install Libraries](#installing-libraries)
+3. [Install Jupyter](#installing-jupyter)
 
 #### Installing Python
 For Windows:  
@@ -137,13 +138,29 @@ For Windows:
 1. Open CMD
 2. For each library type 'pip install [library]'  
 <br/>
+
 For macOS:  
 1. Open Terminal
 2. For each library type 'pip install [library]'  
 <br/>
 
+For Other Platforms:  
+1. Go to Python package installer [tutorial](https://packaging.python.org/tutorials/installing-packages/)
 
+#### Installing Jupyter
+For Windows:  
+1. Open CMD
+2. Type `pip install jupyterlab`  
+<br/>
 
+For macOS:  
+1. Open Terminal
+2. Type `pip install jupyterlab`  
+<br/>
+
+For Other Platforms:  
+1. Go to [Jupyter Lab installationn](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)  
+<br>
 
 ### Installing via Anaconda
 
