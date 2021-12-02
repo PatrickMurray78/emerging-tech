@@ -27,7 +27,8 @@ There are two Jupyter notebooks in this repository:
 * [About the Project](#about-the-project)
 * [Technologies Used](#technologies-used)
 * [How to Install](#how-to-install)
-* [How to Run the Notebooks](#how-to-run-the-notebooks)
+* [How to Run](#how-to-run)
+* [How to Run using Jupyter Lab](#how-to-run-using-jupyter-lab)
 * [References](#references)
 
 ## Technologies Used
@@ -115,7 +116,7 @@ For macOS:
 3. Scroll to the bottom of the page and select the [macOS](https://www.python.org/ftp/python/3.9.0/python-3.9.0-macosx10.9.pkg) installer
 4. Open installer. You will be guided through the installation process.
 5. Python has been installed successfully
-6. Open Terminal and type `python -V`. Python 3.9.0 should be displayed  
+6. Open Terminal and type `$ python -V`. Python 3.9.0 should be displayed  
 
 For Other Platforms:  
 1. Go to [Python downloads](https://www.python.org/download/other/)
@@ -136,12 +137,12 @@ Libraries:
 
 For Windows:  
 1. Open CMD
-2. For each library type 'pip install [library]'  
+2. For each library type `pip install [library]`  
 <br/>
 
 For macOS:  
 1. Open Terminal
-2. For each library type 'pip install [library]'  
+2. For each library type `$ pip install [library]`  
 <br/>
 
 For Other Platforms:  
@@ -155,7 +156,7 @@ For Windows:
 
 For macOS:  
 1. Open Terminal
-2. Type `pip install jupyterlab`  
+2. Type `$ pip install jupyterlab`  
 <br/>
 
 For Other Platforms:  
@@ -163,17 +164,73 @@ For Other Platforms:
 <br>
 
 ### Installing via Anaconda
+In order to install via Anaconda you must follow these steps in order. If you already have one of the steps completed, please move on to the next step.  
+Steps:  
+1. [Install Anaconda](#installing-anaconda)
+2. [Install Jupyter](#installing-jupyter)
 
+#### Installing Anaconda
+For Windows:  
+1. Go to [Anaconda](https://www.anaconda.com/products/individual#windows)
+2. Click the [download](https://repo.anaconda.com/archive/Anaconda3-2021.11-Windows-x86_64.exe) button to download installer
+3. Open installer which will guide you through the installation
+4. Make sure to check the box which will add anaconda to PATH
+5. Anaconda installed successfully
+6. Open CMD and type `conda --version`. Your conda version should be displayed  
+<br/>
 
+For macOS:  
+1. Go to [Anaconda](https://www.anaconda.com/products/individual)
+2. Select "Get Additional Installers"
+3. Select the [64-Bit Graphical Installer](https://repo.anaconda.com/archive/Anaconda3-2021.11-MacOSX-x86_64.pkg)
+4. Open the installer and follow the instructions
+5. Once installed we need tosource our .bash-rc file
+6. Open Terminal and type `$ cd ~` followed by `$ source .bashrc`
+7. Then type `$ python` and you should see something like `Python 3.9.0 | Anaconda Inc. |`  
+<br/>
 
+For Other Platforms:
+1. Go to [Anaconda Installation](https://docs.anaconda.com/anaconda/install/linux/) and follow tutorial
 
-## How to Run the Notebooks
+#### Installing Jupyter
+For Windows:  
+1. Open CMD
+2. Type `conda install jupyterlab`  
+<br/>
 
+For macOS:  
+1. Open Terminal
+2. Type `$ conda install jupyterlab`  
+<br/>
 
-### Running with Docker
-1. Clone Repo
-2. Open CMD and navigate to cloned repo
+For Other Platforms:  
+1. Go to [Jupyter Lab installationn](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)  
+<br>
+
+## How to Run
+Whether we choose to run this project with Jupyter Lab or Docker, the initial steps are the same.  
+1. Open CMD or Terminal
+2. Navigate to the folder you wish to clone this repo into
+3. You may make a folder by typing `mkdir folderName`
+4. Change directory to this folder by typing `cd folderName`
+5. Once inside the folder, clone this repo by typing `git clone https://github.com/PatrickMurray78/emerging-tech`  
+<br/>
+
+### What Now?
+1. [Run using Jupyer Lab](#how-to-run-using-jupyter-lab)
+2. [Run using Docker](#how-to-run-using-docker)  
+
+### How to Run using Jupyter Lab
+Once everything required has been installed, you may run Jupyter Lab by:
+1. Open CMD or Terminal
+2. Change directory to the repo we just downloaded. e.g `cd Users/folderName/emerging-tech`
+3. Type `jupyter lab`. This will launch Jupyter Lab in the browser with all your notebooks and files
+
+### How to Run using Docker
+1. Open CMD or Terminal
+2. Change directory to the repo we just downloaded. e.g `cd Users/folderName/emerging-tech`
 3. Run `docker-compose up`
 4. Once deployed, copy the provided link and paste it as a URL
+5. This will launch Jupyter Lab in the browser
 
 # References
