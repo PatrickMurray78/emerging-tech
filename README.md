@@ -49,13 +49,13 @@ The technologies used in this project were:
 15. [Qiskit](#qiskit)
 
 ### [Python](https://www.python.org/)
-Python is a general purpose and high level programming language. This means that it can be used to create a variety of different programs and isn't specialized for any specific problem.
+Python is a general purpose and high level programming language. This means that it can be used to create a variety of different programs and isn't specialized for any specific problem. Notebooks use Python so it was essential to use Python for this project.
 
 ### [Jupyter Notebook](https://jupyter.org/)
-Jupyter notebooks (or “notebooks”, all lower case) are documents produced by the Jupyter Notebook App, which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…). Notebook documents are both human-readable documents containing the analysis description and the results (figures, tables, etc..) as well as executable documents which can be run to perform data analysis.
+Jupyter notebooks (or “notebooks”, all lower case) are documents produced by the Jupyter Notebook App, which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc). Notebook documents are both human-readable documents containing the analysis description and the results (figures, tables, etc) as well as executable documents which can be run to perform data analysis.
 
 ### [Jupyter Lab](https://jupyter.org/)
-Jupyter Lab is a web-based interactive development environment for notebooks, code and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism and machine learning. Jupyter Lab runs in a single tab, with sub-tabs displayed within that one tab, Jupyter Notebook opens new notebooks in new tabs. So JupyterLab feels more like an IDE.
+Jupyter Lab is a web-based interactive development environment for notebooks, code and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism and machine learning. Jupyter Lab runs in a single tab, with sub-tabs displayed within that one tab, Jupyter Lab opens new notebooks in new tabs. This helps to visualize the two notebooks in this project and allows for simple modification to both notebooks.
 
 ### [NbViewer](https://nbviewer.org/)
 NbViewer is a web application that lets you enter the URL of a Jupyter Notebook file, renders that notebook as a static HTML web page, and gives you a stable link to that page which you can share with others. This is used in the how to run section below to help visualise the notebooks statically without any configuration.
@@ -64,19 +64,19 @@ NbViewer is a web application that lets you enter the URL of a Jupyter Notebook 
 Binder is an online service for building and sharing reproducible and interactive computational environments from online repositories. This is also used in the how to run section below to help launch the notebooks dynamically to allow for easy interactions.
 
 ### [Docker](https://www.docker.com/)
-Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system libraries and dependencies required to run that code in any environment. This will allow anyone to run my notebooks from anywhere with minimal configuration.
+Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system libraries and dependencies required to run that code in any environment. This will allow anyone to run my notebooks from anywhere with minimal configuration by building everything on a server without the need to download all the software on your personal machine.
 
 ### [Scikit-Learn](https://scikit-learn.org/)
-Scikit-learn is probably the most useful library for machine learning in Python. The sklearn library contains a lot of efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction.
+Scikit-learn is probably the most useful library for machine learning in Python. The sklearn library contains a lot of efficient tools for machine learning and statistical modeling including classification, regression, clustering and dimensionality reduction. This library is  demonstrated in `scikit-learn.ipynb`, where I build numerous machine learning models.
 
 ### [NumPy](https://numpy.org/)
-NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays.
+NumPy is a library for the Python programming language, adding support for large, multi-dimensional arrays and matrices, along with a large collection of high-level mathematical functions to operate on these arrays. This helps me to perform more efficient calculations by providing me with faster and more compact arrays.
 
 ### [Pandas](https://pandas.pydata.org/)
 Pandas is a widely-used data analysis and manipulation library for Python. It provides numerous functions and methods that expedite the data analysis and preprocessing steps.
 
 ### [MatPlotLib](https://matplotlib.org/)
-Matplotlib is a cross-platform, data visualization and graphical plotting library for Python and its numerical extension NumPy. As such, it offers a viable open source alternative to MATLAB. Developers can also use matplotlib's APIs (Application Programming Interfaces) to embed plots in GUI applications.
+Matplotlib is a cross-platform, data visualization and graphical plotting library for Python and its numerical extension NumPy. As such, it offers a viable open source alternative to MATLAB. I mainly use [Pyplot](https://matplotlib.org/3.1.1/api/_as_gen/matplotlib.pyplot.html#:~:text=pyplot%20is%20a%20state%2Dbased,pyplot%20as%20plt%20x%20%3D%20np) which allows me to visualize the data by plotting points and creating graphs.
 
 ### [Seaborn](https://seaborn.pydata.org/)
 Seaborn is a library for making statistical graphics in Python. Seaborn helps you explore and understand your data. Its plotting functions operate on dataframes and arrays containing whole datasets and internally perform the necessary semantic mapping and statistical aggregation to produce informative plots.
@@ -85,13 +85,13 @@ Seaborn is a library for making statistical graphics in Python. Seaborn helps yo
 StatsModels is a Python library built specifically for statistics. Statsmodels is built on top of NumPy, SciPy, and matplotlib, but it contains more advanced functions for statistical testing and modeling that you won't find in numerical libraries like NumPy or SciPy.
 
 ### [Plotly](https://plotly.com/)
-Plotly enables Python users to create beautiful interactive web-based visualizations that can be displayed in Jupyter notebooks, saved to standalone HTML files, or served as part of pure Python-built web applications using Dash.
+Plotly enables Python users to create beautiful interactive web-based visualizations that can be displayed in Jupyter notebooks, saved to standalone HTML files, or served as part of pure Python-built web applications using Dash. I used this in `quantum-deutsch.ipynb` to display [chloropleth](https://plotly.com/python/choropleth-maps/) maps. 
 
 ### [SciPy](https://scipy.org/)
 SciPy in Python is an open-source library used for solving mathematical, scientific, engineering, and technical problems. It allows users to manipulate the data and visualize the data using a wide range of high-level Python commands. SciPy is built on the Python NumPy extension.
 
 ### [Qiskit](https://qiskit.org/)
-Qiskit is an open-source software development kit for working with quantum computers at the level of circuits, pulses, and algorithms. It provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Experience or on simulators on a local computer. Using Qiskit, I simulate Deutsch's algorithm in `quantum-deutsch.ipynb`.
+Qiskit is an open-source software development kit for working with quantum computers at the level of circuits, pulses, and algorithms. It provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Experience or on simulators on a local computer. Using Qiskit, I simulate Deutsch's algorithm in `quantum-deutsch.ipynb` using Qiskit.
 
 ## How to Install
 There are two main ways to install this project.
