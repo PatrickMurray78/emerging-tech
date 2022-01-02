@@ -28,7 +28,6 @@ There are two Jupyter notebooks in this repository:
 * [Technologies Used](#technologies-used)
 * [How to Install](#how-to-install)
 * [How to Run](#how-to-run)
-* [How to Run using Jupyter Lab](#how-to-run-using-jupyter-lab)
 * [References](#references)
 
 ## Technologies Used
@@ -36,15 +35,18 @@ The technologies used in this project were:
 1. [Python](#python)
 2. [Jupyter Notebook](#jupyter-notebook)
 3. [Jupyter Lab](#jupyter-lab)
-4. [Docker](#docker)
-5. [Scikit-Learn](#scikit-learn)
-6. [NumPy](#numpy)
-7. [Pandas](#pandas)
-8. [MatPlotLib](#matplotlib)
-9. [Seaborn](#seaborn)
-10. [StatsModels](#statsmodels)
-11. [Plotly](#plotly)
-12. [SciPy](#scipy)
+4. [NbViewer](#nbviewer)
+5. [Binder](#binder)
+6. [Docker](#docker)
+7. [Scikit-Learn](#scikit-learn)
+8. [NumPy](#numpy)
+9. [Pandas](#pandas)
+10. [MatPlotLib](#matplotlib)
+11. [Seaborn](#seaborn)
+12. [StatsModels](#statsmodels)
+13. [Plotly](#plotly)
+14. [SciPy](#scipy)
+15. [Qiskit](#qiskit)
 
 ### [Python](https://www.python.org/)
 Python is a general purpose and high level programming language. This means that it can be used to create a variety of different programs and isn't specialized for any specific problem.
@@ -54,6 +56,12 @@ Jupyter notebooks (or “notebooks”, all lower case) are documents produced by
 
 ### [Jupyter Lab](https://jupyter.org/)
 Jupyter Lab is a web-based interactive development environment for notebooks, code and data. Its flexible interface allows users to configure and arrange workflows in data science, scientific computing, computational journalism and machine learning. Jupyter Lab runs in a single tab, with sub-tabs displayed within that one tab, Jupyter Notebook opens new notebooks in new tabs. So JupyterLab feels more like an IDE.
+
+### [NbViewer](https://nbviewer.org/)
+NbViewer is a web application that lets you enter the URL of a Jupyter Notebook file, renders that notebook as a static HTML web page, and gives you a stable link to that page which you can share with others. This is used in the how to run section below to help visualise the notebooks statically without any configuration.
+
+### [Binder](https://mybinder.org/)
+Binder is an online service for building and sharing reproducible and interactive computational environments from online repositories. This is also used in the how to run section below to help launch the notebooks dynamically to allow for easy interactions.
 
 ### [Docker](https://www.docker.com/)
 Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining application source code with the operating system libraries and dependencies required to run that code in any environment. This will allow anyone to run my notebooks from anywhere with minimal configuration.
@@ -81,6 +89,9 @@ Plotly enables Python users to create beautiful interactive web-based visualizat
 
 ### [SciPy](https://scipy.org/)
 SciPy in Python is an open-source library used for solving mathematical, scientific, engineering, and technical problems. It allows users to manipulate the data and visualize the data using a wide range of high-level Python commands. SciPy is built on the Python NumPy extension.
+
+### [Qiskit](https://qiskit.org/)
+Qiskit is an open-source software development kit for working with quantum computers at the level of circuits, pulses, and algorithms. It provides tools for creating and manipulating quantum programs and running them on prototype quantum devices on IBM Quantum Experience or on simulators on a local computer. Using Qiskit, I simulate Deutsch's algorithm in `quantum-deutsch.ipynb`.
 
 ## How to Install
 There are two main ways to install this project.
@@ -208,7 +219,17 @@ For Other Platforms:
 <br>
 
 ## How to Run
-Whether we choose to run this project with Jupyter Lab or Docker, the initial steps are the same.  
+The easiest way to view these notebooks is by clicking the badges below.  
+You can view the `scikit-learn` and `quantum-deutsch` notebooks in static form by selecting the corresponding nbviewer
+badge and in dynamic form by clicking the corresponding binder badge.
+
+| Scikit-Learn | Quantum-Deutsch |
+| :-: | :-:|
+| [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/PatrickMurray78/emerging-tech/blob/main/scikit-learn.ipynb) | [![nbviewer](https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg)](https://nbviewer.org/github/PatrickMurray78/emerging-tech/blob/main/quantum-deutsch.ipynb) |
+| [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PatrickMurray78/emerging-tech/main?filepath=scikit-learn.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PatrickMurray78/emerging-tech/main?filepath=quantum-deutsch.ipynb) |
+<br>
+
+If we would like to run using Jupyter Lab or Docker, the initial steps are the same.  
 1. Open CMD or Terminal
 2. Navigate to the folder you wish to clone this repo into
 3. You may make a folder by typing `mkdir folderName`
@@ -218,7 +239,7 @@ Whether we choose to run this project with Jupyter Lab or Docker, the initial st
 
 ### What Now?
 1. [Run using Jupyer Lab](#how-to-run-using-jupyter-lab)
-2. [Run using Docker](#how-to-run-using-docker)  
+2. [Run using Docker](#how-to-run-using-docker)
 
 ### How to Run using Jupyter Lab
 Once everything required has been installed, you may run Jupyter Lab by:
@@ -234,3 +255,10 @@ Once everything required has been installed, you may run Jupyter Lab by:
 5. This will launch Jupyter Lab in the browser
 
 # References
+* Dr.Ian McLoughlin (Lecturer) https://github.com/ianmcloughlin
+* Jupyter-Lab https://jupyter.org/
+* Scikit-Learn https://scikit-learn.org/stable/
+* NbViewer https://nbviewer.org/
+  * NbViewer Badge https://github.com/jupyter/nbviewer/issues/714
+* Binder https://mybinder.org/
+* Docker https://docker.com/
