@@ -1,34 +1,60 @@
 # Emerging Technologies
+<b>Name:</b> Patrick Murray  
+<br>
+<b>Student ID:</b> G00344530
+***
 
 ## Overview
 This repository is a project demonstrating my understanding of new technologies we have covered in the Emerging Technology module.
 
+## Table of Contents
+* [Overview](#overview)
+* [About the Project](#about-the-project)
+* [Repository Contents](#so-what-is-in-this-repository)
+* [Technologies Used](#technologies-used)
+* [How to Install](#how-to-install)
+* [How to Run](#how-to-run)
+* [References](#references)
+
 ## About the Project
-The project had a number of requirements that needed to be fulfilled in order to complete the tasks at hand.  
-I was required to create two Jupyter notebooks, scikit-learn and quantum-deutsch.  
+This project had a number of requirements that needed to be fulfilled in order to complete the tasks at hand.  
+I was required to create two Jupyter notebooks, `scikit-learn.ipynb` and `quantum-deutsch.ipynb`.
 Both of these notebooks should have the ability to be ran using Docker, this enables someone to quickly run the notebooks with minimal configuration.
 
-### scikit-learn.ipynb
+### `scikit-learn.ipynb`
 This notebook should contain:
 1. Overview of scikit-learn Python library.
 2. Demonstrations of at least three scikit-learn algorithms.
 3. Appropriate plots and other visualisations.
 
-### quantum-deutsch.ipynb
+### `quantum-deutsch.ipynb`
 This notebook should contain:
 1. Comparison of quantum computing and classical computing.
 2. Explanation of Deutsch's algorithm with code that is simulated using qiskit
-There are two Jupyter notebooks in this repository:
-1. Scikit-Learn - Contains overview of scikit-learn Python library and also demonstations of at least three scikit-learn algorithms.
-2. Quantum-Deutsch - Contains comparison of quantum computing and classical computing, also an explanation of Deutsch's algorithm using qiskit to simulate it with code.
 
-## Table of Contents
-* [Overview](#overview)
-* [About the Project](#about-the-project)
-* [Technologies Used](#technologies-used)
-* [How to Install](#how-to-install)
-* [How to Run](#how-to-run)
-* [References](#references)
+## So what is in this Repository
+* scikit-learn.ipynb - Contains a clear concise overview of the [scikit-learn](https://scikit-learn.org/stable/) library. In this notebook I demonstrate two categories of machine learning algorithms which are supervised and unsupervised. Instead of using three algorithms, I chose to use three tasks which I demonstrated using numerous algorithms which I will explain below.
+
+  * Classification (Supervised)
+    * [Logistic Regression](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)
+    * [K-Nearest Neighbours Classifier](https://scikit-learn.org/stable/modules/generated/sklearn.neighbors.KNeighborsClassifier.html)
+  * Regression (Supervised)
+    * [Linear Regression](https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LinearRegression.html)
+  * Clustering (Unsupervised)
+    * [Hierarchical Clustering](https://scikit-learn.org/stable/modules/clustering.html#hierarchical-clustering)
+    * [K-Means](https://scikit-learn.org/stable/modules/clustering.html#k-means)  
+
+  I use a different dataset for each task which were Wine Quality (Classification), Vehicle (Regression) and Country Data (Clustering). I have also used three different   plotting libraries which were pyplot, seaborn and plotly to make my notebook more visually pleasing by having a wider  range of visualization tools.
+
+* quantum-deutsch.ipynb - Contains a clear concise comparison of quantum computing and classical computing. This notebook also explains [Deutsch's algorithm](https://en.wikipedia.org/wiki/Deutsch%E2%80%93Jozsa_algorithm) along with the preliminaries used.  Deutsch's algorithm is then simulated using [qiskit](https://qiskit.org/).
+
+* Datasets - Contains the datasets used in `scikit-learn.ipynb` in `.csv` format.
+
+* Dockerfile - Script file for docker which contains various commands and arguments that allows an instance of jupyter lab to be created using the dependencies in requirements.txt.
+
+* requirements.txt - Describes all required dependencies that are used to create a docker image.
+
+* Labs - Contains all the notebooks I have used this semester.
 
 ## Technologies Used
 The technologies used in this project were:
