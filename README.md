@@ -169,7 +169,8 @@ Libraries:
 5. seaborn
 6. statsmodels
 7. plotly
-8. scipy  
+8. scipy
+9. qiskit  
 <br/>
 
 For Windows:  
@@ -255,7 +256,7 @@ badge and in dynamic form by clicking the corresponding binder badge.
 | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PatrickMurray78/emerging-tech/main?filepath=scikit-learn.ipynb) | [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/PatrickMurray78/emerging-tech/main?filepath=quantum-deutsch.ipynb) |
 <br>
 
-If we would like to run using Jupyter Lab or Docker, the initial steps are the same.  
+If you would like to run using Jupyter Lab or Docker, the initial steps are the same.  
 1. Open CMD or Terminal
 2. Navigate to the folder you wish to clone this repo into
 3. You may make a folder by typing `mkdir folderName`
@@ -275,10 +276,11 @@ Once everything required has been installed, you may run Jupyter Lab by:
 
 ### How to Run using Docker
 1. Open CMD or Terminal
-2. Change directory to the repo we just downloaded. e.g `cd Users/folderName/emerging-tech`
-3. Run `docker-compose up`
-4. Once deployed, copy the provided link and paste it as a URL
-5. This will launch Jupyter Lab in the browser
+2. Type `docker -v` to ensure docker is installed, if it is not then you may download it [here](https://docs.docker.com/get-docker/)
+3. Change directory to the repo we just downloaded. e.g `cd Users/folderName/emerging-tech`
+4. Run `docker-compose up`
+5. Once deployed, copy the provided link and paste it as a URL
+6. This will launch Jupyter Lab in the browser
 
 # References
 * Dr.Ian McLoughlin (Lecturer) https://github.com/ianmcloughlin
